@@ -100,7 +100,7 @@ export const searchPatients = async (searchTerm) => {
       // Busca por CPF (parcial, só números)  
       const cpfMatch = termNumbers && cpf.includes(termNumbers);
       
-      // Log para debug (remova depois se quiser)
+      // Log para debug 
       if (nomeMatch || cpfMatch) {
         console.log(`✅ Encontrado: ${patient.nome} - nome: ${nomeMatch}, cpf: ${cpfMatch}`);
       }
